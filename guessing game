@@ -1,0 +1,60 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+
+{
+
+
+	/*
+	the rules 
+
+	1) player one selects a random number 
+	2) player two needs too guess the number 
+	3) the game will tell player 2 whether the guess is too low or too high 
+	4) the game will count the number of attempts player 2 made 
+	
+	
+	
+	*/
+
+
+	int numberofattempts = 0;
+	int thenumbertoguess = 0;
+	int currentguess = 0;
+
+	cout << "welcome too the game!" <<endl << endl;
+	cout << "player one: please select a number:" << endl;
+	cin >> thenumbertoguess;
+
+	while (true) {
+		cout << "player two: please guess  the  number:"  << endl;
+		cin >> currentguess;
+
+		if (currentguess > thenumbertoguess) {
+
+			cout << "TOO HIGH! guess lower!" << endl;
+
+		}
+
+		else if (currentguess <thenumbertoguess)
+			cout << "TOO Low! guess higher!" << endl;
+		else {
+
+
+			cout << "You guessed correctly!";
+
+			break;
+
+		}
+
+
+
+		//break the loop when player 2 guesses correctly 
+
+	}
+	
+	return 0;
+}
